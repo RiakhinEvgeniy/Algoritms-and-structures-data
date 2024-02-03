@@ -1,6 +1,4 @@
-package Stack;
-
-import com.sun.xml.internal.bind.v2.runtime.output.SAXOutput;
+package Stacks_and_Queues;
 
 public class MyQueueApp {
     public static void main(String[] args) {
@@ -9,12 +7,11 @@ public class MyQueueApp {
         myQueue.insert(10);
         myQueue.insert(20);
         myQueue.insert(30);
-        myQueue.insert(400);
-        myQueue.insert(500);
+        myQueue.insert(40);
 
-        /*myQueue.remove();
         myQueue.remove();
-        myQueue.remove();*/
+        myQueue.remove();
+        myQueue.remove();
 
         /*myQueue.insert(50);
         myQueue.insert(60);
@@ -28,7 +25,7 @@ public class MyQueueApp {
 
         System.out.println("\nPeek " + myQueue.peekFront());
         System.out.println("Rear " + myQueue.peekRear());
-        System.out.println(myQueue.isFull());
-        System.out.println(myQueue.size());
+        //System.out.println(myQueue.isFull());
+        //System.out.println(myQueue.size());
     }
 }

@@ -1,4 +1,4 @@
-package Stack;
+package Stacks_and_Queues;
 
 public class StackX {
     private int maxSize;
@@ -30,7 +30,19 @@ public class StackX {
         return top == -1;
     }
 
-    public boolean isFull() {
-        return top == maxSize - 1;
+    public boolean isFull() { return top == maxSize - 1; }
+
+    public int size() { return top + 1; }
+
+    public long peekN(int n) { return stackArr[n]; }
+
+    public void displayStack(String str) {
+        System.out.print(str);
+        System.out.print("Stack (bottom-->top: ");
+        for (int i = 0; i < size(); i++) {
+            System.out.print(peekN(i));
+            System.out.print(' ');
+        }
+        System.out.println("");
     }
 }

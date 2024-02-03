@@ -1,4 +1,4 @@
-package Stack;
+package Stacks_and_Queues;
 
 public class StackChars {
     private int maxSize;

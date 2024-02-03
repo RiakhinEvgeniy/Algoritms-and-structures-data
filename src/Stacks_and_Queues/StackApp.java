@@ -1,4 +1,4 @@
-package Stack;
+package Stacks_and_Queues;
 
 public class StackApp {
     public static void main(String[] args) {

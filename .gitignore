@@ -19,4 +19,4 @@ target/
 .repository/
 *.iml
 *.iws
-
+/out/
