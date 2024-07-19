@@ -20,4 +20,4 @@ target/
 *.iml
 *.iws
 /out/
-/out
+/out**

@@ -16,13 +16,6 @@ public class SortedList {
         Link previous = null;       //от начала списка
         Link current = first;       //до конца
 
-        /**
-         * При первом добавлении, переменная current равна null и мы не заходим в while
-         * и присваевываем first ссылку на первый объект.
-         * При втором добавлении, заходим в while и присваевываем previous текущий объект
-         * а current присив. current.next который равен в данный момент null.
-         *
-         */
         while (current != null && key > current.data) {
             previous = current;
             current = current.next;
