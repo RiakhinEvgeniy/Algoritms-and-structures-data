@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.simple2_array;
 
 public class HighArrayApp {
     public static void main(String[] args) {
