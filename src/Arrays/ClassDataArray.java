@@ -1,7 +1,5 @@
 package Arrays;
 
-import java.util.Arrays;
-
 public class ClassDataArray {
     private Person[] arrPer;
     private int nElem;
@@ -51,7 +49,7 @@ public class ClassDataArray {
 
     public void print() {
         for (int i = 0; i < nElem; i++) {
-            arrPer[i].displayName();
+            arrPer[i].displayPerson();
         }
     }
 }

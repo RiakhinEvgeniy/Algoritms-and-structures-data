@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.bubble_sort;
 
 public class BubbleSort {
     private int[] arr;

@@ -15,7 +15,7 @@ public class Person {
         return lastName;
     }
 
-    public void displayName() {
+    public void displayPerson() {
         System.out.printf("%s %s\n Age = %d;\n", lastName, firstName, age);
     }
 }

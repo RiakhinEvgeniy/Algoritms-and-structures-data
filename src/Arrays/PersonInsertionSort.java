@@ -16,7 +16,7 @@ public class PersonInsertionSort {
 
     public void display() {
         for (int i = 0; i < nElem; i++) {
-            arr[i].displayName();
+            arr[i].displayPerson();
             System.out.println();
         }
     }

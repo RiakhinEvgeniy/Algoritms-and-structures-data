@@ -1,11 +1,14 @@
-package Arrays;
+package Arrays.bubble_sort;
+
+import Arrays.InsertionSort;
+import Arrays.SelectSort;
 
 import java.util.Date;
 
 public class CheckTimeForSort {
 
-    private static int size = 10;
-    private static int randomNam = 100;
+    private static final int size = 10;
+    private static final int randomNam = 100;
 
     public static void main(String[] args) {
 
