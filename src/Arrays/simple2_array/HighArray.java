@@ -23,6 +23,13 @@ public class HighArray {
         }
     }
 
+    public int getElementAtIndex(int index) {
+        if (index < 0 || index >= arr.length) {
+            throw new ArrayIndexOutOfBoundsException("Index out of bounds");
+        }
+        return arr[index];
+    }
+
     public boolean find(int key) {
         int i;
         for (i = 0; i < nElem; i++) {
@@ -39,7 +46,6 @@ public class HighArray {
         for (i = 0; i < nElem - 1; i++) {
             if (arr[i] == value) {
                 found = true;
-                countSizeArray--;
                 break;
             }
         }

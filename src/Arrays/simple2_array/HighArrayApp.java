@@ -9,6 +9,7 @@ public class HighArrayApp {
         HighArray highArray = createAndInitArray(sizeArray);
 
         highArray.print();
+        System.out.printf("\nValue of element: [%d]-%d", key, highArray.getElementAtIndex(key));
         System.out.println("\nSize of array is: " + highArray.sizeArray());
 
         findByKey(highArray, key);
