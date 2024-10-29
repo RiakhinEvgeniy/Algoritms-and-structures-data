@@ -1,10 +1,10 @@
 package Arrays;
 
-public class ClassDataArray {
-    private Person[] arrPer;
+public class ArrayDataPerson {
+    private final Person[] arrPer;
     private int nElem;
 
-    public ClassDataArray(int sizeArray) {
+    public ArrayDataPerson(int sizeArray) {
         this.arrPer = new Person[sizeArray];
         nElem = 0;
     }

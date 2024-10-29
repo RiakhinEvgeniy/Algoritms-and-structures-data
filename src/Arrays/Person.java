@@ -1,9 +1,9 @@
 package Arrays;
 
 public class Person {
-    private String firstName;
-    private String lastName;
-    private int age;
+    private final String firstName;
+    private final String lastName;
+    private final int age;
 
     public Person(String lastName, String firstName, int age) {
         this.firstName = firstName;

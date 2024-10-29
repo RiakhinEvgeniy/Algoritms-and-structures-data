@@ -1,6 +1,6 @@
 package Arrays;
 
-public class PersonClassDataArrayApp {
+public class ArrayDataPersonApp {
     public static void main(String[] args) {
 
     }

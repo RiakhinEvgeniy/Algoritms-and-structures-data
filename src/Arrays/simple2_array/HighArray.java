@@ -5,15 +5,22 @@ import java.util.Arrays;
 public class HighArray {
     private final int[] arr;
     private int nElem;
+    private int countSizeArray;
 
     public HighArray(int size) {
+        this.countSizeArray = size;
         arr = new int[size];
         this.nElem = 0;
     }
 
     public void insert(int value) {
-        arr[nElem] = value;
-        nElem++;
+        if (countSizeArray > 0) {
+            arr[nElem] = value;
+            nElem++;
+            countSizeArray--;
+        } else {
+            throw new ArrayIndexOutOfBoundsException("Array is fill");
+        }
     }
 
     public boolean find(int key) {
@@ -32,6 +39,7 @@ public class HighArray {
         for (i = 0; i < nElem - 1; i++) {
             if (arr[i] == value) {
                 found = true;
+                countSizeArray--;
                 break;
             }
         }
