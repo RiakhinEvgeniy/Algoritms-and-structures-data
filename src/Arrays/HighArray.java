@@ -3,7 +3,7 @@ package Arrays;
 import java.util.Arrays;
 
 public class HighArray {
-    private int[] arr;
+    private final int[] arr;
     private int nElem;
 
     public HighArray(int size) {
@@ -26,23 +26,26 @@ public class HighArray {
         return false;
     }
 
-    public boolean remove(int value) {
+    public void remove(int value) {
         int i;
-        for (i = 0; i < nElem -1; i++) {
-            if (arr[i] == value) break;
+        boolean found = false;
+        for (i = 0; i < nElem - 1; i++) {
+            if (arr[i] == value) {
+                found = true;
+                break;
+            }
         }
-        if (i == nElem) return false;
-        else {
+        if (found) {
             for (int j = i; j < nElem - 1; j++) {
-                arr[j] = arr[j+1];
-            } nElem--;
+                arr[j] = arr[j + 1];
+            }
+            nElem--;
         }
-        return true;
     }
 
     public void print() {
         for (int i = 0; i < nElem; i++) {
-            System.out.print(i + "-[" + arr[i] + "];" + " ");
+            System.out.printf("[%d]-%d; ", i, arr[i]);
         }
     }
 
@@ -50,7 +53,7 @@ public class HighArray {
         return arr.length;
     }
 
-    public int getMax() {
+    public int getMaxValueInArray() {
         int max = arr[0];
         for (int i = 0; i < nElem; i++) {
             if (max < arr[i]) {
@@ -60,16 +63,13 @@ public class HighArray {
         if (nElem == 0) {
             return -1;
         }
-
         return max;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof HighArray)) return false;
-
-        HighArray highArray = (HighArray) o;
+        if (!(o instanceof HighArray highArray)) return false;
 
         if (nElem != highArray.nElem) return false;
         return Arrays.equals(arr, highArray.arr);
@@ -80,20 +80,5 @@ public class HighArray {
         int result = Arrays.hashCode(arr);
         result = 31 * result + nElem;
         return result;
-    }
-
-    public int removeGetMax() {
-        int max = arr[0];
-        for (int i = 0; i < nElem; i++) {
-            if (max < arr[i]) {
-                max = arr[i];
-            }
-        }
-        if (nElem == 0) {
-            return -1;
-        }
-        remove(max);
-
-        return max;
     }
 }
