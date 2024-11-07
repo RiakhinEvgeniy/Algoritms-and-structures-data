@@ -1,7 +1,7 @@
 package Arrays.bubble_sort;
 
-import Arrays.InsertionSort;
-import Arrays.SelectSort;
+import Arrays.simple_sort.InsertionSort;
+import Arrays.select_sort.SelectSort;
 
 import java.util.Date;
 

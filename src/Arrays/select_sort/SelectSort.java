@@ -1,7 +1,7 @@
-package Arrays;
+package Arrays.select_sort;
 
 public class SelectSort {
-    private int[] arr;
+    private final int[] arr;
     private int nElem;
 
     public SelectSort(int size) {
@@ -53,10 +53,9 @@ public class SelectSort {
         }
     }
 
-    private void swap(int a, int b) {
-        int tmp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = tmp;
-
+    private void swap(int out, int min) {
+        int tmp = arr[out];
+        arr[out] = arr[min];
+        arr[min] = tmp;
     }
 }

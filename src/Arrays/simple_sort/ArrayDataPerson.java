@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.simple_sort;
 
 public class ArrayDataPerson {
     private final Person[] arrPer;

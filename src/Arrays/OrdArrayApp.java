@@ -17,13 +17,5 @@ public class OrdArrayApp {
 
         OrdArray ordArray3 = new OrdArray(ordArray1.sizeArray() + ordArray2.sizeArray());
         ordArray3.merge(ordArray1.getArr(), ordArray2.getArr());
-
-        /*System.out.println();
-        ordArray1.print();
-        System.out.println();
-        ordArray2.print();*/
-        /*ordArray.remove(key);
-        System.out.println();
-        ordArray.print();*/
     }
 }

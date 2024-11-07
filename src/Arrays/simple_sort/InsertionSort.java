@@ -1,7 +1,7 @@
-package Arrays;
+package Arrays.simple_sort;
 
 public class InsertionSort {
-    private int[] arr;
+    private final int[] arr;
     private int nElem;
 
     public InsertionSort(int size) {

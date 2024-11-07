@@ -1,7 +1,7 @@
 package Arrays.bubble_sort;
 
 public class BubbleSort {
-    private int[] arr;
+    private final int[] arr;
     private int nElem;
 
     public BubbleSort(int size) {

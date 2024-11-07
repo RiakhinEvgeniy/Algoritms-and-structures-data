@@ -1,7 +1,7 @@
-package Arrays;
+package Arrays.simple_sort;
 
 public class PersonInsertionSort {
-    private Person[] arr;
+    private final Person[] arr;
     private int nElem;
 
     public PersonInsertionSort(int size) {
@@ -17,7 +17,7 @@ public class PersonInsertionSort {
     public void display() {
         for (int i = 0; i < nElem; i++) {
             arr[i].displayPerson();
-            System.out.println();
+//            System.out.println();
         }
     }
 
