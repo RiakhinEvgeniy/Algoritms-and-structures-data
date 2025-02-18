@@ -1,7 +1,7 @@
 package Arrays.real_array;
 
 public class Array2D {
-    private int[] array;
+    private final int[] array;
     private final int height;
 
     public Array2D(int height, int length) {
